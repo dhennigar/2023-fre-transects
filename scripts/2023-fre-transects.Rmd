@@ -1,0 +1,28 @@
+---
+title: Tidal marsh biophysical assessments, summer 2023
+author: "Daniel Hennigar, Lauren McNeilly, Matthew Smith"
+date: "September 2023"
+---
+
+# Introduction
+
+Raincoast Conservation Foundation staff conducted biophysical assessments of recently expanding tidal marshes in summer 2023 to inform the upcoming work of PhD student Daniel Stewart and MSc student Daniel Hennigar (Martin Conservation Decisions Lab, University of British Columbia). Two main research questions are explored:
+
+1. What plant species are colonizing and transforming mudflat ecosystems in the Fraser River Estuary?
+
+2. What environmental conditions enable the establishment of such vegetation in mudflat ecosystems?
+
+<!-- Reminder: create an overview map showing all sites -->
+
+35 tidal marshes were selected throughout the lower Fraser River Estuary. 24 marshes represented locations where recent marsh expansion had occurred and 11 marshes were selected where there was no evidence of recent expansion for comparison. Raincoast staff first surveyed foot-accessible sites in late July and early August, while boat-accessible sites were surveyed in late August due to logistical considerations of boat access.
+
+# Methods
+
+Biophysical assessments at each site included vegetation sampling, soil sampling, and an accompanying high-precision elevation profile. At each location, we placed a transect by running an Eslon tape from the lowest elevation plant to backshore (typically riparian vegetation or hard infrastructure). Beginning at the foreshore, we collected GPS coordinates and elevations at 2 m intervals along the transect using an RTK GNSS receiver (Spectra Geospatial SP60). At each interval we described the vegetation community within 1 m of the transect point by categorizing species as dominant (foliar percent-cover ≥ 30%), subdominant (foliar percent-cover 10% < 30%) or incidental (foliar percent-cover ≤ 10%).
+
+Using a 30 cm x 10 cm soil core extractor, we collected cores at 6 equally spaced locations along the transect. Soil collection intervals were selected such that they coincided with one of the points collected by the RTK. The number of soil samples collected was reduced for sites with particularly short transects. We photographed each soil core both intact and split open vertically. The soil profile of each core was described including horizon depths, texture, and a description of the rooting zone. Soil pore salinity was measured with a refractometer (GET MODEL) for each core by extracting a water sample from the hole left by core extraction. Soil pore salinity could not be collected for soil samples whose hole did not fill with water while surveyors were on site.
+
+At each location, we then completed a floristic survey by walking the entire site and documenting every identifiable vascular plant. For complete species lists per site, see Appendix A - Results of Floristic Surveys.
+
+# Site Descriptions
+
