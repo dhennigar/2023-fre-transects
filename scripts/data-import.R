@@ -2,13 +2,25 @@
 ### Authors: Daniel Hennigar, Lauren McNeilly, and Matthew Smith
 ### Raincoast Conservation Foundation
 
+library(stringr)
+library(dplyr)
+library(janitor)
+
 files <- paste("./data/", list.files("./data"), sep = "")
+transects <- data.frame()
 
-output <- data.frame()
-
+## add csv files to the dataframe
 for (path in files) {
-    csv <- read.csv(path)
-    output <- rbind(csv, output)
+    csv <- read.csv(path) %>%
+        mutate(site = path %>%
+                   str_remove("./data/") %>%
+                   str_remove(".csv"))
+    transects <- bind_rows(csv, transects)
 }
 
-saveRDS(output, "./data/combined_transects.RDS")
+## clean up the resulting dataframe
+transects <- transects %>%
+    select(-c(Transect, Carex, hd_calc)) %>%
+    clean_names()
+
+saveRDS(transects, "./data/combined_transects.RDS")
