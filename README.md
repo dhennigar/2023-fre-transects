@@ -7,10 +7,17 @@ the vegetation community associated with each point, and described 6 evenly spac
 
 ## Authors
 
-  Daniel Hennigar, Lower Fraser River Salmon Conservation Field Researcher<sup>\*</sup>
+  Daniel Hennigar, Lower Fraser River Salmon Conservation Field Researcher<sup>1, 2</sup>
   
-  Lauren McNeilly, Conservation Technician<sup>\*</sup>
+  Lauren McNeilly, Conservation Technician<sup>1</sup>
   
-  Matthew Smith, Conservation Technician<sup>\*</sup>
+  Matthew Smith, Conservation Technician<sup>1</sup>
+
+  Daniel Stewart, MSc RPBio, Tidal Marsh Ecologist<sup>2, 3</sup>
   
-  \* Raincoast Conservation Foundation
+  <sup>1</sup> Raincoast Conservation Foundation
+
+  <sup>2</sup> University of British Columbia
+
+  <sup>3</sup> Asarum Ecological Consulting
+  
