@@ -1,0 +1,161 @@
+---
+title: Tidal marsh biophysical assessments, summer 2023
+author:
+- name: Daniel Hennigar
+  affiliation: Raincoast Conservation Foundation, University of British Columbia
+
+- name: Lauren McNeilly
+  affiliation: Raincoast Conservation Foundation
+  
+- name: Matthew Smith
+  affiliation: Raincoast Conservation Foundation
+  
+- name: Daniel Stewart
+  affiliation: Asarum Ecological Consulting, University of British Columbia
+  
+date: "September 2023"
+---
+
+# Introduction
+
+Raincoast Conservation Foundation staff conducted biophysical assessments of recently expanding tidal marshes in summer 2023 to inform the upcoming work of PhD student Daniel Stewart and MSc student Daniel Hennigar (Martin Conservation Decisions Lab, University of British Columbia). Two main research questions are explored:
+
+1. What plant species are colonizing and transforming mudflat ecosystems in the Fraser River Estuary?
+
+2. What environmental conditions enable the establishment of such vegetation in mudflat ecosystems?
+
+<!-- Reminder: create an overview map showing all sites -->
+
+35 tidal marshes were selected throughout the lower Fraser River Estuary. 24 marshes represented locations where recent marsh expansion had occurred and 11 marshes were selected where there was no evidence of recent expansion for comparison. Raincoast staff first surveyed foot-accessible sites in late July and early August, while boat-accessible sites were surveyed in late August due to logistical considerations of boat access.
+
+# Methods
+
+Biophysical assessments at each site included vegetation sampling, soil sampling, and an accompanying high-precision elevation profile. At each location, we placed a transect by running an Eslon tape from the lowest elevation plant to backshore (typically riparian vegetation or hard infrastructure). Beginning at the foreshore, we collected GPS coordinates and elevations at 2 m intervals along the transect using an RTK GNSS receiver (Spectra Geospatial SP60). At each interval we described the vegetation community within 1 m of the transect point by categorizing species as dominant (foliar percent-cover ≥ 30%), subdominant (foliar percent-cover 10% < 30%) or incidental (foliar percent-cover ≤ 10%).
+
+Using a 30 cm x 10 cm soil core extractor, we collected cores at 6 equally spaced locations along the transect. Soil collection intervals were selected such that they coincided with one of the points collected by the RTK. The number of soil samples collected was reduced for sites with particularly short transects. We photographed each soil core both intact and split open vertically. The soil profile of each core was described including horizon depths, texture, and a description of the rooting zone. Soil pore salinity was measured with a refractometer (GET MODEL) for each core by extracting a water sample from the hole left by core extraction. Soil pore salinity could not be collected for soil samples whose hole did not fill with water while surveyors were on site.
+
+At each location, we then completed a floristic survey by walking the entire site and documenting every identifiable vascular plant. For complete species lists per site, see Appendix A - Results of Floristic Surveys.
+
+# Site Descriptions
+
+<!-- import data and set up for elevation profiles -->
+```{r, echo=FALSE, message=FALSE}
+library(tidyverse)
+library(ggthemes)
+library(ggtext)
+library(ggrepel)
+library(ggpubr)
+
+
+transects <- readRDS("./data/combined_transects.RDS")
+```
+
+
+## Tillbury Island West
+
+<!-- Two transects and two photos -->
+
+Tilbury Island West is located in Delta, British Columbia in the south arm of the lower Fraser River at the western extent of Tilbury Island. It consists of both a shoreline marsh along the southern edge of the river, and an island marsh across a shallow channel. Low tide conditions were required to access the island marsh by foot.
+
+Surveyors sampled Tilbury Island West along two transects. Transect 1 was located on the northeast of the marsh island beginning at the bottom of the hook-spit which represents an area of recent marsh expansion. This transect ran northeast for 66 meters from sparsely vegetated mudflat into the high marsh zone, ending at top-of-slope. Substrate along this transect was primarily silty-clay with no or shallow root zones until the upper end of the transect. Pore water salinity along this transect was consistently 1 + 1 %.  The low marsh entailed mainly Callitriche stagnalis and sparse occurrences of Lythrum salicaria, Persicaria spp., and Veronica anagalis-aquatica. The high marsh zone was dominated by Carex lyngbyei, with higher diversity and density of other species including Lythrum salicaria, and Eleocharis palustris. Average C. lyngbyei height increased from 96.4 cm to 115.3 cm along the last six meters of the transect. 
+
+Transect 2 was located to the northeast of Transect 1, targeting a section of shoreline tidal marsh for which there is little evidence of expansion or contraction in recent years. This transect ran west to east for approximately 60 meters beginning in sparsely vegetated mudflat and ending in the high marsh zone. Substrate along this transect was primarily silty-clay-loam with no or shallow root zones until the uppermost portion of the transect. Pore water salinity along the transect ranged from 1 - 2 + 1%. The low marsh entailed similar species composition and density to the low marsh zone at Transect 1. Transect 2, however, coincided with a noticeably more diverse high marsh zone. This diversity was perhaps attributable to the adjacent riparian vegetation and subsequent shift in vegetation community structure at the top of the slope, including a transition from Carex lyngbyei dominance to Phalaris arundinacea and Salix spp.. Average C. lyngbyei height increased fairly steadily along the transect and ranged from 15.6 cm to 128.8 cm. 
+
+## Annacis Channel East
+
+<!-- two transects and two photos -->
+
+Annacis Channel East is located near Belgrave Ave Park Reserve on northeast Annacis Island at the mouth of an embayed mudflat area. Access to this location requires a short walk across the mudflat at low tide from Derwent Way just south of the Annacis Island Swing Bridge. These tidal marshes are backed by a thin buffer of riparian forest to the east, south, and west, beyond which is predominantly urban-industrial land use.
+
+The sampling design at Annacis Channel East entailed two transects (Transect 1 and Transect 2) targeting an area of marsh expansion and marsh stability respectively. Transect 1 crosses a relatively new marsh which is composed of predominantly non-native vegetation that successfully colonized a former sand bar. At this island marsh location, surveyors chose to run the transect past top of slope and down the opposite side of the marsh, ending the transect at the lowest elevation plant on the opposite mudflat. Substrate along this transect was either silty-clay or silty-clay-loam with variable rooting zone depths and consistent pore water salinities of 1 + 1 %. The lowest elevations of Transect 1 were dominated by recumbent mudflat species like Callitriche stagnalis and Myriophyllum ussurus. Lythrum salicaria was present throughout Transect 1 in both the low and high marsh zones. This location lacked a transition to a Carex-dominant high marsh area, with the high marsh instead dominated by Lythrum salicaria and Sparganium emersum.
+
+Transect 2 was placed approximately 100 meters east of Transect 1 and ran west to east from the lowest elevation plant in the sparsely vegetated mudflat, until reaching the edge of the riparian vegetation in the high marsh zone. The substrate along this transect was exclusively silty-clay with no obvious rooting zone until the latter half of the transect. Pore water salinity could only be assessed at two locations along this transect and ranged between 1 - 2 + 1 %. The low marsh vegetation was comparable with that of Transect 1, but the high marsh vegetation differed significantly. The high marsh of Transect 2 was instead composed of Carex lyngbyei and (further upslope) Phalaris arundinacea before a transition to riparian and terrestrial plants (e.g., Salix spp.). Average C. lyngbyei height ranged from 55 to 89.2 cm, generally increasing along the transect. 
+
+## Annacis Southwest
+
+Southwest Annacis is located on the southwestern shore of Annacis Island in the south arm of the lower Fraser River in Delta, BC. Access is a short walk through forested riparian area from Cliveden Avenue which is approximately 30 m north. 
+The site consists of a shoreline marsh approximately 3 ha in size, which extends approximately 1200 meters east from Purfleet Point. A series of unused and apparently unmaintained barges are stored about 20 meters offshore. They appear consistently in satellite imagery since at least 2002. The authors have observed Canada geese nesting on these barges in recent years and evidence of herbivory is apparent at this site with Carex lyngbyei at the leading edge often grazed to just a few cm tall.
+Surveyors sampled one transect located in the center of the marsh, targeting an area of recent marsh expansion. The transect ran south for approximately 74 meters beginning in the mudflat and ending at the back of the high marsh zone. Substrate texture along this transect varied between silty-clay and silty-clay-loam. Rooting depth was also variable with no roots observed in the lowest two soil cores and rooting depths of 15 - 22 cm in the upper four cores. Pore water salinity was measured to be between 0 to 2 + 1 %. The mudflat here was fairly extensive, extending about 30 meters, and contained only sparse vegetation. It was dominated by Zannichellia palustris and Triglochin scilloides. The high marsh zone began at about 32 meters and was dominated by Carex lyngbyei with Agrostis stolonifera. Mean C. lyngbyei height was variable along the transect and ranged between 16.2 and 119.4 cm. Towards the back of the marsh, Agrostis stolonifera and Phalaris arundinacea were dominant.
+
+## Annacis Channel Middle
+
+Annacis Channel Middle is located in the Annacis Channel of the south arm of the lower Fraser River in Delta, BC. The site is on the northwest shore of Annacis Island and can be accessed via a short walk through forested riparian area from Cliveden Avenue which is approximately 40 meters southeast of the site. 
+
+This site consists of a shoreline marsh approximately 3 ha in area, extending 950 m along the shore. Log storage booms were absent at time of survey, but are typically seen abutting the length of the marsh in previous aerial imagery. 
+
+Surveyors sampled one transect located in the southwest corner of the marsh, targeting an area of recent marsh expansion. The transect ran southeast for approximately 46 meters beginning in sparsely vegetated mudflat and ending at the edge of riparian vegetation. Substrate along this transect was a silty-clay texture at all sample points except at the lowest elevation where it was silty-clay-loam. Rooting depths at this site ranged from 2.5 cm at the lowest elevation to 22 cm at the highest elevation. Pore water was generally too turbid to collect accurate salinity measurements, however, two stations where sampling was possible resulted in a salinity range of 0 - 1 + 1 % for this transect. Low marsh vegetation was dominated by Veronica anagallis-aquatica interspersed mainly with Spargnanium emersum and Persicaria spp. Carex lyngbyei was dominant in the intermediate zone of the transect with Agrostis stolonifera and Equisetum fluviatile as subdominant species. Average C. lyngbyei height tended to increase moving up the transect from 38.4 cm to 125.4 cm. Phalaris arundinacea was dominant in the high marsh zone near the back of the marsh. Lythrum salicaria was notably absent from the lower marsh zones at this site and only found in small amounts in the higher marsh zones.
+
+## Annacis Channel West
+
+Annacis Channel West is located on the north side of Annacis Channel approximately 5 km from the trifurcation of the lower Fraser River. This tidal marsh bench is backed by about 30 meters of riparian forest which extends until Fraserwood Way and the surrounding urban industrial facilities. On site, surveyors observed twelve Canada geese grazing on an adjacent mudflat, along with evidence of goose herbivory (e.g., clipping of the marsh vegetation).
+
+The site included a bench composed of mudflat and tidal marsh vegetation approximately 650 m long and 70 m wide at its maximum extent. The transect at this site was set on the bench to target an area of recent marsh vegetation expansion. The transect began at the lowest elevation vascular plant (Callitriche stagnalis) and extended 66 meters towards the backshore, ending at the transition to riparian terrestrial plants. Substrate along the transect was consistently silty-clay textured and had variable rooting depths between 2 cm at the lower end of the transect and 20 cm at the higher end. Sand deposits were noted at 9 and 14 cm in the lowest elevation soil core. Pore water salinity along the transect ranged from 1 - 2 + 1 % for the first four stations. Salinity was not able to be sampled at the last two stations. Vegetation in the lower mudflat area contained mainly C. stagnalis, Eleocharis palustris, Lythrum salicaria, and Sagittaria latifolia. In the higher, more densely vegetated marsh, Carex lyngbyei  and Agrostis stolonifera were dominant. Other species occurring in the high marsh included Schoenoplectus tabernaemontani, L. salicaria, and Epilobium ciliatum. Woody debris accumulation was noted in the final 10 meters of our transect.
+
+## Queensborough East
+
+Queensborough East is located on the north bank of Annacis Channel approximately 500 meters from the trifurcation of the lower Fraser River. The site entails a marsh bench approximately 100 meters long and 30 meters wide at its maximum extent. The marsh includes a thin transition zone of riparian vegetation (e.g., Salix spp.), which is backed by rip-rap armoring and residential buildings. The site is about 50 meters downstream from a small commercial ferry dock and the foreshore is surrounded by commercial log storage which extends nearly uninterrupted for 600 meters downstream. Evidence of grazing (e.g., clipped marsh vegetation and footprints) were visible, though no Canada geese were observed during surveying.
+
+The substrate of this site comprised a much higher proportion of sand than previous sites in and around Annacis Island, and was noticeably more well drained. The texture of the soil varied along the transect between silt-loam, loam, and sandy-loam. Root depth was not detected in the first two cores and varied from 16 - 19 cm in the last three cores. Little pooling of water occurred on the mudflat surface and the soil core holes filled quickly with water unlike many of those at sites with finer sediment. Despite this, salinity was not able to be evaluated due to turbid conditions of pore water. 
+
+The lower marsh area was a very sparsely vegetated mudflat with one plot near the foreshore including no plants at all. The sparse vegetation was composed mainly of Equisetum fluviatile and Lythrum salicaria with trace amounts of Eleocharis palustris and Callitriche stagnalis. This transect had a very sharp transition into the high marsh zone which was composed mainly of Carex lyngbyei and Typha latifolia. Average sedge height of C. lyngbyei varied along the transect from 39.8 to 108.6 cm. Incidents of other species were also observed in the high marsh zone and included Juncus oxymeris and Agrostis stolonifera. C. lyngbyei transitioned into Phalaris arundinacea towards the upland side of the high marsh zone.
+
+## Burnaby South
+
+Burnaby South is located on the Burnaby shoreline of the north arm of the Fraser river approximately 0.9 km downstream from the Queensburough bridge. It is roughly 0.57 ha in size and extends along the shoreline for approximately 300 meters. The marsh is located to the south of a rip rap dike and walkway which separates it from commercial and industrial facilities to the north. This site was accessed by parking at the end of Willard Street and walking down from the dike. 
+
+One transect, approximately 30 meters in length, was surveyed at this site. The transect ran northwest from the sparsely vegetated low marsh to the edge of the rip rap dike. Substrate along the transect was primarily silt-clay-loam with various rooting depths ranging from 0 - 15.5 cm. Organic deposits and mottling were noted in approximately half of the core samples. Salinity measurements were consistently 0 + 1 % along the entire transect. The lower reach of the transect had instances of several species of vegetation including Callitriche stagnalis and Persicaria spp.. The upper reach of the transect was primarily dominated by Lythrum salicaria and Juncus articulatus with varying subdominant species including Eleocharis parvula, Agrostis stolonifera and Scirpus microcarpus. 
+
+## Queensborough Bridge
+
+Queensborough Bridge is located in the north arm of the lower Fraser River in New Westminster, BC. The site is below and to the west of the Queensborough Bridge, immediately north of Fraser Riverside Park and the McArthur Glen Outlet Mall. Fraser Riverside Park is essentially a dyke trail through a narrow riparian corridor, which provides access to the marsh. A narrow band of mudflat extends ~580 meters down the length of the dyke, with vegetation newly developing only at certain points.The tidal area at this site is only about 15 meters wide at the widest point, and is confined by the armoured riprap backshore that supports the dyke. Extensive log storage booms also abutted the entirety of the foreshore at the time of survey.
+
+Surveyors sampled two short transects, targeting areas of recent plant colonization. Transect 1 was placed approximately 110 meters southwest of the Queensborough bridge, and ran southeast for 14 meters, beginning in the lower mudflat and ending at the riprap backshore. Substrate texture at this site ranged from silt-loam to silt-clay-loam with root zones between 0 and 19 cm. Pore water salinity was only able to be collected at two of three sampling stations but consistently measured 1 + 1 %. The lower mudflat zone of Transect 1 had only sparse incidences of C. stagnalis, Persicaria spp, and S. emersum. The high marsh zone was dominated by C. lyngbyei and L. Salicaria with occurrences of A. Stolonifera, and S. Microcarpus. Average sedge height of C. lyngbyei increased along the transect from 24.8 to 71.2 cm. 
+
+Transect 2 was placed approximately 240 meters southwest of the Queensborough bridge, in a narrower, less densely vegetated area of extremely recent colonization. It ran southeast for 8 meters, beginning at the lower extent of the mudflat and ending at the riprap backshore. Substrate along this transect was silt-loam with no root zone visible in two of three cores. The third core had a very shallow root zone only measuring 4.5 cm. Pore water salinity was only estimated from one of the three cores and was 1 + 1 %.  The mudflat featured sparse incidences of just 7 species, mainly Persicaria spp and C. stagnalis. No high marsh zone was observed along this transect
+
+## Mitchell Island West
+
+Mitchell Island is located in the north arm of the Fraser River in Richmond, British Columbia. The Mitchell Island West site is located at the south end of Mitchell Island Road on the south-central portion of the island. The site is located immediately south of aggregate and concrete suppliers and immediately west of the North Arm Transportation Barge Facility. The approximately 1.25 ha tidal marsh was established as part of a habitat compensation project in 1988. The marsh area has since shown evidence of recession, and little to no evidence of expansion into adjacent mudflat areas. There  is a sandy berm along the front of the marsh and an area of mudflat at the east extent. A  straight drainage channel runs from an outflow at the end of Mitchell Road through the eastern edge of the marsh. The north edge of the marsh has a thin stretch of riparian vegetation with hard infrastructure and industrial land use beyond.
+
+Two transects were assessed in the eastern section of this marsh during low tide on August 3rd, 2023. The first ran northwest for approximately 30 meters from the sandy berm into the high marsh zone. Substrate texture along this transect was variable but overall had higher sand content than most other sites sampled. Rooting zones along this transect were relatively shallow (i.e., 0 - 9 cm) with the exception of the most upland soil core (20 cm). Pore water salinity along this transect ranged from 0 - 1 + 1 %. The lower extent of this transect had sparse incidents of Callitriche stagnalis, Eleocharis parvula, and Persicaria spp., whereas the upper reach of the transect was dominated by Lythrum salicaria. 
+
+The second transect was located further east and ran for approximately 40 meters from silty mudflat into the high marsh zone. Substrate along this transect started out with sandier texture, but transitioned into loam/silt-loam after the sixteen meter mark. Rooting zones were still shallow along the lower half of the transect (i.e., 0 - 5 cm) but were deeper throughout the latter half (i.e., 20 - 21 cm). Pore water salinity range did not differ from the first transect. The lower reach of transect two had instances of Callitriche stagnalis, Eleocharis palustris and Bidens cernua. Whereas, the upper reach of this transect was dominated by Carex lyngbyei with subdominant species including Lythrum salicaria and Agrostis stolonifera. Average C. lyngbyei height along this transect generally increased with a range of 59.2 cm to 126.2 cm.
+
+## Mitchell Island East
+
+The second site on Mitchell island is located on the south eastern end of the island. The site was accessed by walking south along the beach from the east end of Mitchell Road. This site is located immediately south of concrete supply and recycling centers. The marsh extends west along the shoreline and is about 0.3 ha in size. A thin riparian strip of trees and shrubs separates the north edge of the marsh from the industrial facilities. The lower portion of this marsh is sparsely vegetated, sandy mudflat which is likely experiencing marsh expansion. Log booms were present in front of the entire stretch of marsh at this site during sampling. 
+
+One transect was assessed at this site on August 3rd, 2023. The transect ran north from the low elevation mudflat into the high marsh zone for approximately 20 meters. Due to quick rising tide, only four soil cores were able to be assessed at this site. Texture of the sampled cores varied including sandy loam, silt-loam, and silty-clay-loam. Rooting depth also varied along the transect from a minimum of 0 cm to a maximum of 21 cm. Vegetation in the low marsh included instances of Callitriche stagnalis and Persicaria spp.. The higher marsh zone was primarily dominated by Carex lyngbyei with subdominant species including Typha angustifolia and Agrostis stolonifera. Average C. lyngbyei generally increased along the transect with heights ranging from 74 to 136 cm. 
+
+## Richmond North
+
+Richmond North is located in the north arm of the Fraser River along Richmond’s shoreline. It is directly south of the western tip of Mitchell Island. The marsh is a thin shoreline marsh which extends west to east for approximately 1.1 kilometers. The site is immediately north of a dike trail which is built up with rip rap and extends along the length of the shoreline. Log booms were present in front of the marsh during sampling. 
+
+Sampling at this site took place from roughly 1:00 - 2:30 PM on Friday, August 4th 2023. One 24 meter transect ran south from the low marsh zone to the edge of the riparian vegetation at the bottom of the rip rap dike. Four soil cores were taken at six meter intervals along the length of the transect. The first three cores (0m, 6m, 12m) had a clay loam texture with no obvious root zone, whereas the upper most core (18m) had a silty clay texture with a 20 cm root zone. Pore water salinity was estimated at three out of the four core sampling stations and was between 0 and 1 + 1 %. The low marsh portion of the transect contained Sagittaria latifolia and Zannichellia palustris, whereas the upper marsh portion was dominated by Juncus balticus and Carex lyngbyei. Average sedge height of Carex lyngbyei increased with elevation along the transect from 61.6 cm at the twelve meter mark to 100.6 cm at the twenty-two meter mark. 
+
+## Richmond No. 7 Rd
+
+This site is located in the north arm of the Fraser River along the Richmond shoreline to the north of River Road. To access the site, surveyors walked approximately 200 meters west along the beach from No. 7 Road Pier Park. The broader site contained areas of sandy beach, silty mudflat, and tidal marsh. A riparian zone of trees and shrubs separated the marsh edge from No. 7 Road to the south. Various industrial facilities are located adjacent to the site along No. 7 Road (e.g., sand and stone suppliers). There is also a barge terminal located approximately 1 km west of the site. An extensive network of log booms were stored in front of the marsh during sampling. The marsh at this site is thought to be expanding in size. 
+
+Sampling at this site was conducted from approximately 3:00 - 5:00 PM on Friday, August 4th, 2023. One 40 meter transect ran south from the low marsh zone to the edge of the riparian vegetation. The substrate at this site was evaluated through seven soil cores. Substrate was consistently silty-clay texture with various rooting depths and horizons. The transect began in mudflat with instances of Callitriche stagnalis, Persicaria spp., and Limosella aquatica amongst other species. At approximately eight meters, the marsh transitioned into more of a sedge bench with Carex lyngbyei as a subdominant species with instances of several other species including Lythrum salicaria and Agrostis stolonifera. Average C. lyngbyei height in this section ranged between 56.8 and 91.4 cm. Midway through the transect, the substrate became muddy with slight ponding. This section had a notable presence of Typha angustafolia. The last reach of the transect returned to mudflat conditions containing similar species to the lower reach, until reaching the riparian edge.
+
+## Canoe Pass
+
+The Canoe Pass site was located in the south arm of the Fraser River approximately 1.7 km downstream of the Westham Island Bridge. This is an approximately 3.5 hectare island-tidal-marsh consisting of low lying mudflat and upper elevation marsh vegetation communities. This site is surrounded by agricultural land to the north on Westham Island as well as to the south in delta. Approximately 300 geese were observed in the waters to the south and east of the island during the time of sampling. 
+
+This site was accessed by boat from Wellington Point Park, Ladner. Surveyors sampled two transects at Canoe Pass from approximately 6:45 to 12:30 on August 25th, 2023. The first transect was located on the eastern end of the island and ran southwest for approximately 150 meters from low elevation mudflat into upper elevation high marsh. The majority of this transect was dominated by Schoenoplectus pungens and E. Palustra with C. lyngbyei becoming dominant in places in the upper reach. Average sedge height of C. lyngbyei ranged from 5.8 cm in the lower reach to 120.8 cm in the upper reach. The substrate along this transect varied in texture and had root depths ranging from 0 to 20 cm. Pore water salinity was not able to be assessed along this transect due to lack of pore water in the soil pits. The second transect was located to the west of the first and ran southeast for approximately 32 meters from the north edge of the marsh. This transect ran up a steep bank on the north side of the island and into the high marsh zone. Dominant plant species along this transect included Schoenoplectus pungens, Eleocharis palustris, and Carex lyngbyei. Average height of Carex lyngbyei along this transect ranged from 69.2 to 124 cm. Substrate along this transect was primarily silt clay loam in texture with rooting depths varying from 4 to 22 cm deep. Pore water salinity was only able to be assessed at one location on this transect and ranged from 2 to 3 + 1%. Salinity of the channel adjacent to the transect was assessed at 4 + 1%.
+
+## Sapperton Bar
+
+Sapperton Bar is located in the mainstem of the Fraser River approximately five kilometers downstream of the Port Mann bridge. The site is approximately 45 hectares in area and consists of mudflat, tidal marsh, and riparian zones. Marsh expansion is evident moving towards the east at this site, as observed by the change in vegetation community structure and recent colonization of low elevation mudflat. 
+
+Surveyors sampled at this site from approximately 11:00 - 16:00 on August 28th, 2023. The site was accessed by boat from the Vancouver Wooden Boat Society dock in New Westminster. Log booms were observed around the entire perimeter of the island and several old barges and pilings were observed along the western end of the site. Two transects were sampled at this site. The first transect ran northwest for approximately 74 meters from low lying mudflat into a patch of high marsh vegetation. The second transect was located approximately 1.2 kilometers upstream of transect one and ran northwest for approximately 60 meters. The lower reach of transect 1 was dominated by an assemblage of mudflat species including Persicaria spp. and Veronica anagallis-aquatica. At approximately __ meters, the vegetation community transitioned to a Lythrum salicaria-dominant high marsh. Substrate along the lower reach of this transect had sandy loam to sandy clay loam texture with no obvious rooting zone. These core samples were shorter in length due to a suspected sand layer that was not able to be penetrated with the coring device. Substrate along the upper reach of the transect shifted to a silt clay loam texture with increasing rooting zones ranging from 2.5 to 20 cm. Pore water salinity was only able to be estimated in the upper reach of the transect and was consistently 0 + 1%. The low marsh zone of transect two was similar to that of Transect 1, with slightly more Lythrum salicaria at lower elevations. The upper reach of this transect similarly transitioned to a Lythrum salicaria-dominant high marsh zone. Substrate along this transect ranged from sandy loam to loam in texture. The lower half of the transect had no obvious rooting zone while the upper reach had rooting depths ranging from 4 to 18 cm. Pore water salinity was not able to be estimated along this transect due to lack of pore water in the soil pits.
+
+## South Arm Marshes West
+
+<!-- needs a proper site description -->
+
+## Frenchie's Island
+
+<!-- no site description yet -->
+
