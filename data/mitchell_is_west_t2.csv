@@ -1,4 +1,4 @@
-Meter,Northing,Easting,Elevation,desc,carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
+Meter,Northing,Easting,Elevation,Desc,Carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
 0,5449649.966,493302.268,0.376,i: callsta,0,0,,0.376,c1,0,0,0,0,0
 2,5449651.627,493301.262,0.468,i: eleopal,0,0,,,,0.092,2,0.046,1.997887352,1.997887352
 4,5449653.387,493300.318,0.508,no plants,0,0,,,,0.04,2,0.02,1.99960012,3.997487472

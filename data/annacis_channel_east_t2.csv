@@ -1,4 +1,4 @@
-Meter,Northing,Easting,Elevation,Desc,Carex,carex_m,carex_heights,rise,slope_dist,slope_percent,hd_calc,hd,soil_pos,soil_desc
+Meter,Northing,Easting,Elevation,Desc,Carex,carex_m,carex_height,rise,slope_dist,slope_percent,hd_calc,hd,soil_pos,soil_desc
 0,5447764.257,504832.322,0.033,i: callsta-eleopar-spareme-zannpal-myriuss,0,0,,0,0,0,0,0,0.033,c1
 2,5447766.088,504832.977,0.095,i: callsta-zannpal-myriuss,0,0,,0.062,2,0.031,1.999039692,1.999039692,,
 4,5447768.001,504833.706,0.118,i: callsta-zannpal-myriuss-vero sp.,0,0,,0.023,2,0.0115,1.999867763,3.998907455,,

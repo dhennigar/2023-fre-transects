@@ -1,4 +1,4 @@
-Meter,Northing,Easting,Elevation,Desc,carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
+Meter,Northing,Easting,Elevation,Desc,Carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
 0,5446007.472,501923.69,-0.138,i:  callsta-crasaqu          ,0,,,-0.138,c1,0,0,0,0,0
 2,5446009.432,501923.419,0.073,i:  callsta-pers sp.-eleopar         ,0,,,,,0.211,2,0.1055,1.988961808,1.988961808
 4,5446011.434,501923.154,0.229,i:  callsta-pers sp.-eleopar-crasaqu        ,0,,,,,0.156,2,0.078,1.993943621,3.98290543

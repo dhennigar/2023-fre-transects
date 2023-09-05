@@ -1,4 +1,4 @@
-Meter,Northing,Easting,Elevation,Desc,carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
+Meter,Northing,Easting,Elevation,Desc,Carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
 0,5442537.054,496802.86,-0.002,i: ceradem,,,,-0.002,c1,0,0,0,0,0
 2,5442535.917,496804.474,0.015, i: ceradem,,,,,,0.017,2,0.0085,1.999927754,1.999927754
 4,5442534.807,496806.13,0.039, i: ceradem-callsta,,,,,,0.024,2,0.012,1.999856016,3.999783769

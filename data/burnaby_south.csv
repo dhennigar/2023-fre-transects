@@ -1,4 +1,4 @@
-Meter,Northing,Easting,Elevation,Desc,carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
+Meter,Northing,Easting,Elevation,Desc,Carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
 0,5448830.767,503085.22,0.182,i: pers sp. - callsta,0,0,,0.182,c1,,0,0,0,0
 2,5448832.411,503084.313,0.289,s: callsta,0,0,,,,0.108,2,0.054,1.997090362,1.997090362
 4,5448834.193,503083.317,0.449,d: callsta,0,0,,,,0.16,2,0.08,1.993630557,3.990720919

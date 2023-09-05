@@ -1,4 +1,4 @@
-Meter,Northing,Easting,Elevation,Desc,carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
+Meter,Northing,Easting,Elevation,Desc,Carex,carex_m,carex_height,soil_pos,soil_desc,rise,slope_dist,slope_percent,hd_calc,hd
 0,5445218.762,501735.155,-0.392,i: trigsci           ,,,,-0.392,c1,0,0,0,0,0
 2,5445220.718,501734.882,-0.29,i: trigsci-zannpal           ,,,,,,0.103,2,0.0515,1.997353014,1.997353014
 4,5445222.672,501734.573,-0.255,i: trigsci-zannpal-callsta-limoaqu          ,,,,,,0.034,2,0.017,1.999711063,3.997064077

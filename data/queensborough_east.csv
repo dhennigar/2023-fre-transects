@@ -1,4 +1,4 @@
-Meter,Northing,Easting,Elevation,Desc,carex,carex_m,carex_height,rise,slope_dist,slope_percent,hd_calc,hd,soil_desc,soil_pos
+Meter,Northing,Easting,Elevation,Desc,Carex,carex_m,carex_height,rise,slope_dist,slope_percent,hd_calc,hd,soil_desc,soil_pos
 0,5448922.526,505617.587,0.322,i: equiflu-lythsal,,,,0,0,0,0,0,c1,0.322
 2,5448923.67,505616.004,0.527,No plants,,,,0.205,2,0.1025,1.989575818,1.989575818,,
 4,5448924.835,505614.425,0.691,i: equiflu-trigsci-eleopal,,,,0.164,2,0.082,1.99330972,3.982885538,c2,0.691
