@@ -16,16 +16,12 @@ author:
 date: "September 2023"
 ---
 
-<!-- rmarkdown options -->
+<!-- rmarkdown export options -->
 
 ```{r echo=FALSE, message=FALSE}
-knitr::opts_chunk$set(
-                      echo = FALSE, message = FALSE, warning = FALSE,
-                      fig.width = 8.5, fig.height = 4
-                  )
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE,
+                      fig.width = 8.5, fig.height = 4)
 ```
-
-
 
 # Introduction
 
@@ -50,11 +46,10 @@ At each location, we then completed a floristic survey by walking the entire sit
 # Site Descriptions
 
 <!-- import data and set up for elevation profiles -->
-```{r, echo=FALSE, message=FALSE}
+```{r}
 library(tidyverse)
 library(ggthemes)
 library(ggtext)
-library(ggrepel)
 library(ggpubr)
 
 transects <- readRDS("./data/combined_transects.RDS")
@@ -64,16 +59,19 @@ make_profile <- function(transect_data) {
         xlab("Horizontal Distance (m)") +
         ylab("Elevation (m)") +
         geom_line() +
-        geom_line(aes(y = carex_height), color = "green4", linetype = "dashed") +
+        geom_line(aes(y = carex_height),
+                  color = "green4", linetype = "dashed", alpha = 0.5) +
         geom_point(size = 2.5) +
-        geom_point(aes(y = carex_height), color = "green4", size = 2.5) +
-        geom_text_repel(max.overlaps = Inf, hjust = -0.1, angle = 90, size = 2.5) +
-        geom_point(aes(y = soil_pos - 0.25), color = "orange", size = 2.5, shape = 17) +
-        ylim(-1.25, 7.5) +
-        theme_minimal()
+        geom_point(aes(y = carex_height),
+                   color = "green4", size = 2.5, alpha = 0.5) +
+        geom_point(aes(y = soil_pos - 0.3), color = "black", size = 2.5, shape = 17) +
+        geom_text(max.overlaps = Inf, hjust = -0.1, angle = 90, size = 3) +
+        scale_x_continuous(breaks = 5 * (transect_data$hd %/% 5)) +
+        scale_y_continuous(breaks = seq(-1, 7, by = 0.5),
+                           limits = c(-1, 7)) +
+        theme_classic()
 }
 ```
-
 
 ## Tillbury Island West
 
