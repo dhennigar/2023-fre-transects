@@ -16,6 +16,17 @@ author:
 date: "September 2023"
 ---
 
+<!-- rmarkdown options -->
+
+```{r echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(
+                      echo = FALSE, message = FALSE, warning = FALSE,
+                      fig.width = 8.5, fig.height = 4
+                  )
+```
+
+
+
 # Introduction
 
 Raincoast Conservation Foundation staff conducted biophysical assessments of recently expanding tidal marshes in summer 2023 to inform the upcoming work of PhD student Daniel Stewart and MSc student Daniel Hennigar (Martin Conservation Decisions Lab, University of British Columbia). Two main research questions are explored:
@@ -46,14 +57,41 @@ library(ggtext)
 library(ggrepel)
 library(ggpubr)
 
-
 transects <- readRDS("./data/combined_transects.RDS")
+
+make_profile <- function(transect_data) {
+    ggplot(data = transect_data, aes(x = hd, y = elevation, label = desc)) +
+        xlab("Horizontal Distance (m)") +
+        ylab("Elevation (m)") +
+        geom_line() +
+        geom_line(aes(y = carex_height), color = "green4", linetype = "dashed") +
+        geom_point(size = 2.5) +
+        geom_point(aes(y = carex_height), color = "green4", size = 2.5) +
+        geom_text_repel(max.overlaps = Inf, hjust = -0.1, angle = 90, size = 2.5) +
+        geom_point(aes(y = soil_pos - 0.25), color = "orange", size = 2.5, shape = 17) +
+        ylim(-1.25, 7.5) +
+        theme_minimal()
+}
 ```
 
 
 ## Tillbury Island West
 
-<!-- Two transects and two photos -->
+```{r}
+tillbury_island_west_t1_profile <- transects %>%
+    filter(site == "tillbury_is_west_t1") %>%
+    make_profile()
+
+tillbury_island_west_t1_profile
+```
+
+```{r}
+tillbury_island_west_t2_profile <- transects %>%
+    filter(site == "tillbury_is_west_t2") %>%
+    make_profile()
+
+tillbury_island_west_t2_profile
+```
 
 Tilbury Island West is located in Delta, British Columbia in the south arm of the lower Fraser River at the western extent of Tilbury Island. It consists of both a shoreline marsh along the southern edge of the river, and an island marsh across a shallow channel. Low tide conditions were required to access the island marsh by foot.
 
@@ -64,6 +102,23 @@ Transect 2 was located to the northeast of Transect 1, targeting a section of sh
 ## Annacis Channel East
 
 <!-- two transects and two photos -->
+
+```{r}
+annacis_channel_east_t1_profile <- transects %>%
+    filter(site == "annacis_channel_east_t1") %>%
+    make_profile()
+
+annacis_channel_east_t1_profile
+```
+
+```{r}
+annacis_channel_east_t2_profile <- transects %>%
+    filter(site == "annacis_channel_east_t2") %>%
+    make_profile()
+
+annacis_channel_east_t2_profile
+```
+
 
 Annacis Channel East is located near Belgrave Ave Park Reserve on northeast Annacis Island at the mouth of an embayed mudflat area. Access to this location requires a short walk across the mudflat at low tide from Derwent Way just south of the Annacis Island Swing Bridge. These tidal marshes are backed by a thin buffer of riparian forest to the east, south, and west, beyond which is predominantly urban-industrial land use.
 
