@@ -8,21 +8,21 @@ library(janitor)
 
 ## Transect data import and cleaning
 
-files <- paste("./data/", list.files("./data"), sep = "")
+transect_files <- paste("./data/transects/", list.files("./data/transects"), sep = "")
 transects <- data.frame()
 
 ## add csv files to the dataframe
-for (path in files) {
+for (path in transect_files) {
     csv <- read.csv(path) %>%
         mutate(site = path %>%
-                   str_remove("./data/") %>%
+                   str_remove("./data/transects/") %>%
                    str_remove(".csv"))
     transects <- bind_rows(csv, transects)
 }
 
 ## clean up the resulting dataframe
 transects <- transects %>%
-    select(-c(Transect, Carex, hd_calc)) %>%
+    select(-any_of(c("Transect", "Carex", "hd_calc"))) %>%
     clean_names()
 
 saveRDS(transects, "./data/combined_transects.RDS")
