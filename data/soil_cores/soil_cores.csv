@@ -1,0 +1,134 @@
+Transect,Meter,Horizons,Total_Depth,Root_Zone,Root_abundance,Salinity,H1_Depth,H1_Texture,H2_Depth,H2_Texture,H3_Depth,H3_Texture,H4_Depth,H4_Texture,Notes
+Tilbury Island West 1,0,1,19,4.5,,1,19,Silty Clay,,,,,,,
+Tilbury Island West 1,12,1,15.5,N/A,,1,15.5,Silty Clay Loam,,,,,,,
+Tilbury Island West 1,24,1,15,N/A,,N/A,15,Silty Clay,,,,,,,
+Tilbury Island West 1,36,1,17,3.5,,1,17,Silty Clay,,,,,,,
+Tilbury Island West 1,48,1,15,N/A,,1,15,Silty Clay,,,,,,,
+Tilbury Island West 1,60,1,17,15,,1,17,Silty Clay,,,,,,,
+Tilbury Island West 2,0,1,18.5,2,,1,18.5,Silty Clay Loam,,,,,,,
+Tilbury Island West 2,10,1,16,N/A,,1,16,Silty Clay Loam,,,,,,,
+Tilbury Island West 2,20,2,17,N/A,,2,16,Silty Clay Loam,17,Silty Clay Loam,,,,,H2 black organic layer with visible detritius
+Tilbury Island West 2,30,1,18,N/A,,1,18,Silty Clay Loam,,,,,,,Black organics visible throughout
+Tilbury Island West 2,40,2,19.5,19.5,,1,14,Silt,19.5,Loam,,,,,
+Tilbury Island West 2,50,2,19,19,,N/A,6,Silty Clay Loam,19,Silty Loam,,,,,
+Annacis Channel East 1,0,1,13.5,N/A,N/A,1,13.5,Silty Clay Loam,,,,,,,Mottles present
+Annacis Channel East 1,12,1,16,14,F-VF,1,16,Silty Clay,,,,,,,
+Annacis Channel East 1,24,1,16,4,F-VF,1,16,Silty Clay,,,,,,,Red worms present
+Annacis Channel East 1,36,1,14,14,F-F/VF,1,14,Silty Clay,,,,,,,
+Annacis Channel East 1,48,2,18,18,"P-VF, F-F",N/A,6,Silty Clay,18,Silty Clay Loam,,,,,
+Annacis Channel East 1,60,2,19,19,"P-VF, P-F",N/A,17,Silty Clay,19,Sandy Clay Loam,,,,,
+Annacis Channel East 1,72,1,15,3,F-VF,1,15,Silty Clay Loam,,,,,,,Salinity taken from river (10 m away)
+Annacis Channel East 2,0,1,15,N/A,,2,15,Silty Clay,,,,,,,
+Annacis Channel East 2,6,1,15.5,N/A,,1,15.5,Silty Clay,,,,,,,
+Annacis Channel East 2,12,1,18,N/A,,N/A,18,Silty Clay,,,,,,,
+Annacis Channel East 2,18,1,20,13,P-VF,N/A,20,Silty Clay,,,,,,,Mottles present
+Annacis Channel East 2,24,1,18,18,P-F,N/A,18,Silty Clay,,,,,,,
+Annacis Channel East 2,30,1,22,22,P-F,N/A,22,Silty Clay,,,,,,,Mottles present
+Southwest Annacis,0,1,15.5,N/A,,1,15.5,Silt Clay Loam,,,,,,,
+Southwest Annacis,14,1,15.5,N/A,N/A,N/A,15.5,Silt Clay Loam,,,,,,,Too much sediment to read salinity 
+Southwest Annacis,28,1,15,15,"F-VF, P-F",2,15,Silty Clay,,,,,,,Mottles present 0-4 cm
+Southwest Annacis,42,2,22,22 +,"P-F (for H1), P-M (for H2)",1,10.5,Silt Clay Loam,22,Clay Loam,,,,,slight change in colour from H1-H2
+Southwest Annacis,56,1,20,20 +,P-VF,1,20,Silt Clay Loam,,,,,,,Mottles present  
+Southwest Annacis,70,1,20,16,P-VF,1,20,Woody Debris,,,,,,,"No visible mineral horizon, woody debris "
+Annacis Channel Middle,0,1,18,2.5,F-VF ,1,18,Silt Clay Loam,,,,,,,
+Annacis Channel Middle,8,1,17,7,,N/A,17,Silty Clay,,,,,,,Mottles present throughout; no pore water available for salinity
+Annacis Channel Middle,16,1,19,9,"F-VF, F-F",N/A,19,Silty Clay,,,,,,,
+Annacis Channel Middle,24,1,14,7,F-F,0,14,Silty Clay,,,,,,,
+Annacis Channel Middle,32,2,16,16,"P-VF, P-F, F-M",N/A,9,Silty Clay,16,Silty Clay,,,,,Mottles present in H1
+Annacis Channel Middle,40,1,22,22,"P-VF, P-F, F-M",N/A,22,Silty Clay,,,,,,,"Mottles present from 0-17 cm, pore water too turbid to do salinity reading"
+Annacis Channel West,0,2,15,2,F-VF,1,15,Silty Clay,"9, 14",Sand,,,,,1 cm pure sand deposits at 9 and 14 cm.
+Annacis Channel West,12,1,13,13,P-VF,1,13,Silty Clay,,,,,,,Sparse mottles at 0-3cm
+Annacis Channel West,24,1,18,10,"F-F, F-VF",2,18,Silty Clay,,,,,,,Worms present
+Annacis Channel West,36,1,19.5,17,"P-VF, P-F",1,19.5,Silty Clay,,,,,,,Mottles present
+Annacis Channel West,48,1,20,20,P-VF,N/a,20,Silty Clay,,,,,,,Mottles present
+Annacis Channel West,60,1,20,20,"P-VF, P-F, F-M",N/A,20,Silty Clay,,,,,,,Mottles present
+Queensborough East,0,1,16,N/A,,N/A,16,Silt Loam,,,,,,,Mottles present 
+Queensborough East,4,2,16,N/A,,N/A,5,Loam,16,Silt Clay Loam,,,,,Mottles present 
+Queensborough East,8,2,16,16,"P-F, F-VF",N/A,12,Loam,16,Silt Loam,,,,,Mottles present 
+Queensborough East,12,1,19,19,"P-F, P-VF",N/A,19,Silt Loam,,,,,,,Mottles present
+Queensborough East,16,2,19,19,"P-VF,F-F",N/A,3,Sandy Loam,19,Silt Clay Loam,,,,,Mottles present
+Mitchell Island West,0,1,18,3,VF-VF,0,18,Sandy Clay Loam,,,,,,,Worms present
+Mitchell Island West,6,3,18,N/A,,0,8,Silty Sand,13,Sandy Loam,18,Silty  Sand,,,
+Mitchell Island West,12,2,18,N/A,,1,5,Sandy Loam,18,Silty Sand,,,,,Mottles present in H1
+Mitchell Island West,18,4,19,5,"P-VF,F-F",1,5,Sandy Loam,8,Silty Sand,14,Sandy Loam,19,Silty Sand,Mottles present in H1 and H3
+Mitchell Island West,24,2,20,9,"P-VF,F-F",0,6,Sandy Clay Loam,20,Sandy Loam,,,,,Mottles present in H1
+Mitchell Island West,30,1,20,20,"P-VF,F-F",0,,Silt Clay Loam,,,,,,,Mottles present to 5 cm
+Mitchell Island West,0,1,17,N/A,,0,17,Sandy Clay Loam,,,,,,,Worms present
+Mitchell Island West,8,1,16.5,3,F-VF,0,16.5,Sandy Clay Loam,,,,,,,Worms present
+Mitchell Island West,16,1,18.5,5,F-VF,0,18.5,Loam,,,,,,,Worms present
+Mitchell Island West,24,1,20.5,20.5,"P-VF,F-F",0.5,20.5,Silt Loam,,,,,,,
+Mitchell Island West,32,1,20,20,"P-VF,F-F",1,20,Silt Loam,,,,,,,
+Mitchell Island West,40,1,21,21,"P-VF,F-F",1,21,Silt Loam,,,,,,,Mottles present throughout
+Mitchell Island East,0,1,17.5,N/A,,N/A,17.5,Sandy Loam,,,,,,,
+Mitchell Island East,6,1,21,6,F-VF,N/A,21,Silt Loam,,,,,,,Mottles present 0-10cm
+Mitchell Island East,12,1,21,21,"P-VF,F-F,F-M",N/A,21,Silt Clay Loam,,,,,,,Mottles present throughout
+Mitchell Island East,18,1,18,18,"P-VF,F-F,F-M",N/A,18,Silt Clay Loam,,,,,,,Mottles present throughout
+Queensborough Bridge,0,1,20,N/A,,1,20,Silt Loam,,,,,,,Worms  present
+Queensborough Bridge,8,1,17,8,F-VF,1,17,Silt Loam,,,,,,,Mottles present 0-8cm
+Queensborough Bridge,14,1,19,19,"P-VF,P-F,F-M",N/A,19,Silt Clay Loam,,,,,,,Mottles present
+Queensborough Bridge,0,1,20,4.5,F-VF,N/A,20,Silt Loam,,,,,,,
+Queensborough Bridge,4,1,19,N/A,,N/A,19,Silt Loam,,,,,,,Worms  present
+Queensborough Bridge,8,1,16,N/A,,1,16,Silt Loam,,,,,,,Worms  present
+Burnaby South,0,1,18.5,N/A,,0,18.5,Clay Loam,,,,,,,Organic deposit at 10 cm
+Burnaby South,6,1,18,7.5,F-VF,N/A,18,Silt Clay Loam,,,,,,,Mottles present throughout
+Burnaby South,12,3,20,15,P-VF,0,13,Silt Clay Loam,15,Sandy Loam,20,Silt Clay Loam,,,"Mottles present in H1, Organic deposit in H2"
+Burnaby South,18,2,20,12,"P-VF,F-F",0,12,Silt Clay Loam,20,Silt Clay Loam,,,,,Mottles present in H1
+Burnaby South,24,1,20,6,F-VF,0,20,Silt Clay Loam,,,,,,,Dense organic  deposit at 10 cm
+Burnaby South,30,1,12,9,"P-VF,F-F",0,12,Silt Clay Loam,,,,,,,Organic detritus throughout
+Richmond North,0,1,19.5,N/A,,0,19.5,Clay Loam,,,,,,,
+Richmond North,6,1,19,N/A,,1,19,Clay Loam,,,,,,,"Worms present, organic detritus throughout"
+Richmond North,12,3,18,N/A,,N/A,2,Clay Loam,14,Loamy Sand,18,Clay Loam,,,"Mottles present in H1, H2 + H3 contained heavy organics"
+Richmond North,18,1,20,20,"P-VF,F-F,F-M",1,20,Silty Clay,,,,,,,Mottles present
+Richmond No. 7 Road,0,1,18,N/A,,2,18,Silty Clay,,,,,,,Mottles present
+Richmond No. 7 Road,6,2,17,9,F-VF,1,15,Silty Clay,17,Loamy Sand,,,,,"Mottles present, worms present "
+Richmond No. 7 Road,12,1,17,17,"P-VF,F-F,F-M",N/A,17,Silty Clay,,,,,,,
+Richmond No. 7 Road,18,2,17,7,"P-VF,F-F",2,2,Silty Clay,17,Silty Clay,,,,,"Roots concentrated in H1, slight colour difference"
+Richmond No. 7 Road,24,1,15,8,"P-VF,F-F",N/A,15,Silty Clay,,,,,,,"Mottles present, worms present"
+Richmond No. 7 Road,30,1,16,2,F-VF,0,16,Silty Clay,,,,,,,"Mottles present throughout, worms present"
+Richmond No. 7 Road,36,2,17,3,F-VF,N/A,15,Silty Clay,17,Sandy Loam,,,,,Mottles present throughout
+Canoe Pass,0,3,15,N/A,N/A,N/A,3,Silty Sand,11,Silty Sand,15,loamy sand,,,mottles present throughout; gley in H2
+Canoe Pass,50,1,18,18,"P-F, P-VF",N/A,18,Loam,,,,,,,
+Canoe Pass,100,1,20,20,"P-VF, F-F",N/A,20,Sandy Clay Loam,,,,,,,black organics throughout
+Canoe Pass,150,1,17,17,"P-VF, P-F",N/A,17,Clay Loam,,,,,,,sparse mottles
+Canoe Pass,2,1,21,4,F-VF,4,21,Silt Loam,,,,,,,"mottles throughout, salinity taken from channel"
+Canoe Pass,8,1,20,20,"P-VF, F-M",N/A,20,Silt Clay Loam,,,,,,,"few, light mottles throughout"
+Canoe Pass,14,1,18,18,"P-VF, F-M",2-3,18,Silt Clay Loam,,,,,,,
+Canoe Pass,20,1,19,19,"P-VF, P-F, F-M",N/A,19,Silt Clay Loam,,,,,,,
+Canoe Pass,26,1,21,21,"P-VF, F-F, F-M",N/A,21,Silt Clay Loam,,,,,,,mottles throughout 
+Canoe Pass,32,1,22,22,"P-VF, F-F, F-M, F-C",N/A,22,Silt Clay Loam,,,,,,,"mottles throughout, wood debris at ~ 5 cm"
+Sapperton,0,1,15,N/A,,N/A,15,Sandy Loam,,,,,,,"*note first few cores of this transect are shorter, suspected sand layer beneath could not be penetrated. Cores taken until depth of refusal. "
+Sapperton,14,1,13.5,N/A,,N/A,13.5,Sandy Loam,,,,,,,
+Sapperton,28,1,17,N/A,,N/A,17,Sandy Clay Loam,,,,,,,Large wood chips at ~2cm and 11cm
+Sapperton,42,2,18,2.5,P-VF,0,12,Silt Clay Loam,18,Silt Loam,,,,,mottles throughout H1
+Sapperton,66,1,18,18,"P-VF, F-F",0,18,Silt Clay Loam,,,,,,,mottles throughout core 
+Sapperton,74,1,20,20,"P-VF, F-F, F-C",0,20,Silt Clay Loam,,,,,,,"mottles throughout, wood chip at 14.5 cm"
+Sapperton,0,1,13,N/A,,N/A,13,Sandy Loam,,,,,,,"thin layers of mottling at 0, 6, 10, 13 cm"
+Sapperton,12,1,18.5,N/A,,N/A,18.5,Loam,,,,,,,
+Sapperton,24,1,19,N/A,,N/A,19,Loam,,,,,,,mottles throughout core
+Sapperton,36,4,15.5,4,"F-VF, F-F",N/A,2,Sandy Loam,4,Loamy sand,5.5,Loamy sand,15.5,Loamy sand,"*faint mottles throughout, mainly in H3 and H1"
+Sapperton,48,3,16.5,16.5,"F-VF, F-F",N/A,5,Sandy Loam,10.5,Loamy sand,16.5,Loamy sand,,,"*mottles throughout, mainly in H2 and H1"
+Sapperton,60,1,18,18,"P-VF, F-F",N/A,18,Sandy Loam,,,,,,,*mottles throughout 
+South Arm Marshes West 1,0,1,15,N/A,,4,15,Silt Clay Loam,,,,,,,"dense mottle layer at 11cm, salinity from channel"
+South Arm Marshes West 1,40,1,16,16,"P-VF, P-F, F-M",5,16,Silt Clay Loam,,,,,,,mottles throughout
+South Arm Marshes West 1,80,1,18,18,"P-VF, P-F, F-M",5,18,Silt Clay Loam,,,,,,,mottles throughout
+South Arm Marshes West 1,120,2,19,19,"P-VF, P-F, F-M",5,15,Silt Clay Loam,19,Sandy Clay Loam,,,,,"mottles throughout, gley in H2"
+South Arm Marshes West 1,160,1,17,17,"P-VF, F-F, F-M",5,17,Sandy Loam,,,,,,,Dense black organic deposit 11-17cm
+South Arm Marshes West 1,200,1,17,N/A,,5,17,Silty sand,,,,,,,Mottles present 0-2 cm
+South Arm Marshes West 2,0,1,18.5,N/A,,5,18.5,Loamy sand,,,,,,,
+South Arm Marshes West 2,14,1,18,18,"P-VF, P-F, F-M",5,18,Sandy Loam,,,,,,,Mottles throughout
+South Arm Marshes West 2,28,1,19,18,"P-VF, P-F",4,19,Silt Loam,,,,,,,Mottles throughout
+South Arm Marshes West 2,42,1,19,19,"P-VF, P-F",2,19,Silt Clay Loam,,,,,,,Mottles throughout
+South Arm Marshes West 2,56,1,17,17,"P-VF, F-F, P-M",4,17,Silt Clay Loam,,,,,,,Very dense roots
+South Arm Marshes West 2,70,2,18,18,"P-VF, F-F",N/A,4,Wood debris/litter,18,Silt Clay Loam,,,,,H2 contains heavy black organics
+Frenchies Island 1,0,4,18,N/A,,3,10,Loamy sand,14,Sand,15,Loamy sand,18,Sand,
+Frenchies Island 1,16,1,19,19,"P-VF, F-F",4,19,Silt loam,,,,,,,Black deposit at ~10 cm
+Frenchies Island 1,32,1,22,22,"P-VF, P-F, F-M, F-C",3,22,Silt clay loam,,,,,,,
+Frenchies Island 1,48,1,20,20,"P-VF, F-F, F-M",N/A,20,Silt clay loam,,,,,,,Mottles throughout
+Frenchies Island 1,64,2,22,22,"P-VF, P-F, F-M",2,14,Silt clay loam,22,Silty clay,,,,,Mottles throughout
+Frenchies Island 1,80,1,22,22,"P-VF, F-F, F-M",5,22,Silty clay,,,,,,,Mottles throughout
+Frenchies Island 2,0,1,18.5,N/A,,3,18.5,Sandy loam,,,,,,,"Organics at 11 cm, mottles in upper 5 cm"
+Frenchies Island 2,14,2,21,21,"P-VF, P-F, F-M",N/A,9,Silt clay loam,21,Silt clay loam,,,,,Mottles throughout
+Frenchies Island 2,28,2,19.5,19.5,"P-VF, F-F, F-M",N/A,8,Silt clay loam,19.5,Silt clay loam,,,,,Mottles throughout
+Frenchies Island 2,42,1,20,20,"P-VF, F-F, F-C",N/A,20,Silt clay loam,,,,,,,Mottles throughout
+Frenchies Island 2,56,2,19,19,"P-VF, F-F, F-C",N/A,3.5,Silt loam,19,Silt clay loam,,,,,Mottles throughout
+Frenchies Island 2,70,1,20,20,"P-VF, P-F, F-M",N/A,20,Silt clay loam,,,,,,,Mottles throughout
