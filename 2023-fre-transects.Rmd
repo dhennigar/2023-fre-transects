@@ -15,6 +15,8 @@ author:
   affiliation: Raincoast Conservation Foundation
   
 date: "September 2023"
+
+output: bookdown::html_document2
 ---
 
 <!-- rmarkdown export options -->
@@ -80,11 +82,11 @@ make_profile <- function(transect_data) {
 
 Tilbury Island West is located in Delta, British Columbia in the south arm of the lower Fraser River at the western extent of Tilbury Island. It consists of both a shoreline marsh along the southern edge of the river, and an island marsh across a shallow channel. Low tide conditions were required to access the island marsh by foot.
 
-Surveyors sampled Tilbury Island West along two transects. Transect 1 was located on the northeast of the marsh island beginning at the bottom of the hook-spit which represents an area of recent marsh expansion. This transect ran northeast for 66 meters from sparsely vegetated mudflat into the high marsh zone, ending at top-of-slope. Substrate along this transect was primarily silty-clay with no or shallow root zones until the upper end of the transect. Pore water salinity along this transect was consistently 1 + 1 %.  The low marsh entailed mainly Callitriche stagnalis and sparse occurrences of *Lythrum salicaria*, *Persicaria spp.*, and *Veronica anagalis-aquatica*. The high marsh zone was dominated by *Carex lyngbyei*, with higher diversity and density of other species including *Lythrum salicaria*, and *Eleocharis palustris*. Average *C. lyngbyei* height increased from 96.4 cm to 115.3 cm along the last six meters of the transect. 
+Surveyors sampled Tilbury Island West along two transects. Transect 1 was located on the northeast of the marsh island beginning at the bottom of the hook-spit which represents an area of recent marsh expansion. This transect ran northeast for 66 meters from sparsely vegetated mudflat into the high marsh zone, ending at top-of-slope (fig 1). Substrate along this transect was primarily silty-clay with no or shallow root zones until the upper end of the transect. Pore water salinity along this transect was consistently 1 + 1 %.  The low marsh entailed mainly Callitriche stagnalis and sparse occurrences of *Lythrum salicaria*, *Persicaria spp.*, and *Veronica anagalis-aquatica*. The high marsh zone was dominated by *Carex lyngbyei*, with higher diversity and density of other species including *Lythrum salicaria*, and *Eleocharis palustris*. Average *C. lyngbyei* height increased from 96.4 cm to 115.3 cm along the last six meters of the transect. 
 
-Transect 2 was located to the northeast of Transect 1, targeting a section of shoreline tidal marsh for which there is little evidence of expansion or contraction in recent years. This transect ran west to east for approximately 60 meters beginning in sparsely vegetated mudflat and ending in the high marsh zone. Substrate along this transect was primarily silty-clay-loam with no or shallow root zones until the uppermost portion of the transect. Pore water salinity along the transect ranged from 1 - 2 + 1%. The low marsh entailed similar species composition and density to the low marsh zone at Transect 1. Transect 2, however, transected a noticeably more diverse high marsh zone. This diversity was perhaps attributable to the adjacent riparian vegetation and subsequent shift in vegetation community structure at the top of the slope, including a transition from *Carex lyngbyei* dominance to *Phalaris arundinacea* and *Salix spp.*. Average *C. lyngbyei* height increased fairly steadily along the transect and ranged from 15.6 cm to 128.8 cm. 
+Transect 2 was located to the northeast of Transect 1, targeting a section of shoreline tidal marsh for which there is little evidence of expansion or contraction in recent years. This transect ran west to east for approximately 60 meters beginning in sparsely vegetated mudflat and ending in the high marsh zone (fig 2). Substrate along this transect was primarily silty-clay-loam with no or shallow root zones until the uppermost portion of the transect. Pore water salinity along the transect ranged from 1 - 2 + 1%. The low marsh entailed similar species composition and density to the low marsh zone at Transect 1. Transect 2, however, transected a noticeably more diverse high marsh zone. This diversity was perhaps attributable to the adjacent riparian vegetation and subsequent shift in vegetation community structure at the top of the slope, including a transition from *Carex lyngbyei* dominance to *Phalaris arundinacea* and *Salix spp.*. Average *C. lyngbyei* height increased fairly steadily along the transect and ranged from 15.6 cm to 128.8 cm. 
 
-```{r}
+```{r fig1, fig.cap = "Tillbury Island West Transect 1 profile including vegetation communities. Soil profile locations indicated with black triangles."}
 tillbury_island_west_t1_profile <- transects %>%
     filter(site == "tillbury_is_west_t1") %>%
     make_profile()
@@ -92,7 +94,7 @@ tillbury_island_west_t1_profile <- transects %>%
 tillbury_island_west_t1_profile
 ```
 
-```{r}
+```{r fig2, fig.cap = "Tillbury Island West Transect 2 profile including vegetation communities. Soil profile locations indicated with black triangles."}
 tillbury_island_west_t2_profile <- transects %>%
     filter(site == "tillbury_is_west_t2") %>%
     make_profile()
@@ -108,7 +110,7 @@ The sampling design at Annacis Channel East entailed two transects (Transect 1 a
 
 Transect 2 was placed approximately 100 meters east of Transect 1 and ran west to east from the lowest elevation plant in the sparsely vegetated mudflat, until reaching the edge of the riparian vegetation in the high marsh zone. The substrate along this transect was exclusively silty-clay with no obvious rooting zone until the latter half of the transect. Pore water salinity could only be assessed at two locations along this transect and ranged between 1 - 2 + 1 %. The low marsh vegetation was comparable with that of Transect 1, but the high marsh vegetation differed significantly. The high marsh of Transect 2 was instead composed of *C. lyngbyei* and (further upslope) *P. arundinacea* before a transition to riparian and terrestrial plants (e.g., *Salix spp.*). Average *C. lyngbyei* height ranged from 55 to 89.2 cm, generally increasing along the transect. 
 
-```{r}
+```{r fig3, fig.cap = "Annacis Channel East Transect 1 profile including vegetation communities. Soil profile locations indicated with black triangles."}
 annacis_channel_east_t1_profile <- transects %>%
     filter(site == "annacis_channel_east_t1") %>%
     make_profile()
@@ -116,7 +118,7 @@ annacis_channel_east_t1_profile <- transects %>%
 annacis_channel_east_t1_profile
 ```
 
-```{r}
+```{r fig4, fig.cap = "Annacis Channel East Transect 2 profile including vegetation communities. Soil profile locations indicated with black triangles."}
 annacis_channel_east_t2_profile <- transects %>%
     filter(site == "annacis_channel_east_t2") %>%
     make_profile()
@@ -130,7 +132,7 @@ Southwest Annacis is located on the southwestern shore of Annacis Island in the 
 The site consists of a shoreline marsh approximately 3 ha in size, which extends approximately 1200 meters east from Purfleet Point. A series of unused and apparently unmaintained barges are stored about 20 meters offshore. They appear consistently in satellite imagery since at least 2002. The authors have observed Canada geese nesting on these barges in recent years and evidence of herbivory is apparent at this site with *C. lyngbyei* at the leading edge often grazed to just a few cm tall.
 Surveyors sampled one transect located in the center of the marsh, targeting an area of recent marsh expansion. The transect ran south for approximately 74 meters beginning in the mudflat and ending at the back of the high marsh zone. Substrate texture along this transect varied between silty-clay and silty-clay-loam. Rooting depth was also variable with no roots observed in the lowest two soil cores and rooting depths of 15 - 22 cm in the upper four cores. Pore water salinity was measured to be between 0 to 2 + 1 %. The mudflat here was fairly extensive, extending about 30 meters, and contained only sparse vegetation. It was dominated by *Zannichellia palustris* and *Triglochin scilloides*. The high marsh zone began at about 32 meters and was dominated by *C. lyngbyei* with *Agrostis stolonifera*. Mean *C. lyngbyei* height was variable along the transect and ranged between 16.2 and 119.4 cm. Towards the back of the marsh, *A. stolonifera* and *P. arundinacea* were dominant.
 
-```{r}
+```{r fig5, fig.cap = "Annacis Southwest transect including vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "annacis_southwest") %>%
     make_profile()
@@ -144,7 +146,7 @@ This site consists of a shoreline marsh approximately 3 ha in area, extending 95
 
 Surveyors sampled one transect located in the southwest corner of the marsh, targeting an area of recent marsh expansion. The transect ran southeast for approximately 46 meters beginning in sparsely vegetated mudflat and ending at the edge of riparian vegetation. Substrate along this transect was a silty-clay texture at all sample points except at the lowest elevation where it was silty-clay-loam. Rooting depths at this site ranged from 2.5 cm at the lowest elevation to 22 cm at the highest elevation. Pore water was generally too turbid to collect accurate salinity measurements, however, two stations where sampling was possible resulted in a salinity range of 0 - 1 + 1 % for this transect. Low marsh vegetation was dominated by *V. anagallis-aquatica* interspersed mainly with *S. emersum* and *Persicaria spp.*. *C. lyngbyei* was dominant in the intermediate zone of the transect with *A. stolonifera* and *Equisetum fluviatile* as subdominant species. Average *C. lyngbyei* height tended to increase moving up the transect from 38.4 cm to 125.4 cm. *P. arundinacea* was dominant in the high marsh zone near the back of the marsh. *L. salicaria* was notably absent from the lower marsh zones at this site and only found in small amounts in the higher marsh zones.
 
-```{r}
+```{r fig6, fig.cap = "Annacis Channel Middle transect including vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "annacis_channel_mid") %>%
     make_profile()
@@ -156,7 +158,7 @@ Annacis Channel West is located on the north side of Annacis Channel approximate
 
 The site included a bench composed of mudflat and tidal marsh vegetation approximately 650 m long and 70 m wide at its maximum extent. The transect at this site was set on the bench to target an area of recent marsh vegetation expansion. The transect began at the lowest elevation vascular plant (Callitriche stagnalis) and extended 66 meters towards the backshore, ending at the transition to riparian terrestrial plants. Substrate along the transect was consistently silty-clay textured and had variable rooting depths between 2 cm at the lower end of the transect and 20 cm at the higher end. Sand deposits were noted at 9 and 14 cm in the lowest elevation soil core. Pore water salinity along the transect ranged from 1 - 2 + 1 % for the first four stations. Salinity was not able to be sampled at the last two stations. Vegetation in the lower mudflat area contained mainly *C. stagnalis*, *Eleocharis palustris*, *L. salicaria*, and *Sagittaria latifolia*. In the higher, more densely vegetated marsh, *C. lyngbyei* and *A. stolonifera* were dominant. Other species occurring in the high marsh included *Schoenoplectus tabernaemontani*, *L. salicaria*, and *Epilobium ciliatum*. Woody debris accumulation was noted in the final 10 meters of our transect.
 
-```{r}
+```{r fig7, fig.cap = "Annacis Channel West elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "annacis_channel_west") %>%
     make_profile()
@@ -170,7 +172,7 @@ The substrate of this site comprised a much higher proportion of sand than previ
 
 The lower marsh area was a very sparsely vegetated mudflat with one plot near the foreshore including no plants at all. The sparse vegetation was composed mainly of *E. fluviatile* and *L. salicaria* with trace amounts of *E. palustris* and *C. stagnalis*. This transect had a very sharp transition into the high marsh zone which was composed mainly of *C. lyngbyei* and *Typha latifolia*. Average sedge height of *C. lyngbyei* varied along the transect from 39.8 to 108.6 cm. Incidents of other species were also observed in the high marsh zone and included *Juncus oxymeris* and *A. stolonifera*. *C. lyngbyei* transitioned into *P. arundinacea* towards the upland side of the high marsh zone.
 
-```{r}
+```{r fig8, fig.cap = "Queensborough East elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "queensborough_east") %>%
     make_profile()
@@ -182,7 +184,7 @@ Burnaby South is located on the Burnaby shoreline of the north arm of the Fraser
 
 One transect, approximately 30 meters in length, was surveyed at this site. The transect ran northwest from the sparsely vegetated low marsh to the edge of the rip rap dike. Substrate along the transect was primarily silt-clay-loam with various rooting depths ranging from 0 - 15.5 cm. Organic deposits and mottling were noted in approximately half of the core samples. Salinity measurements were consistently 0 + 1 % along the entire transect. The lower reach of the transect had instances of several species of vegetation including *C. stagnalis* and *Persicaria spp.*. The upper reach of the transect was primarily dominated by *L. salicaria* and *Juncus articulatus* with varying subdominant species including *Eleocharis parvula*, *A. stolonifera* and *Scirpus microcarpus*. 
 
-```{r}
+```{r fig9, fig.cap = "Burnaby South elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "burnaby_south") %>%
     make_profile()
@@ -196,13 +198,13 @@ Surveyors sampled two short transects, targeting areas of recent plant colonizat
 
 Transect 2 was placed approximately 240 meters southwest of the Queensborough bridge, in a narrower, less densely vegetated area of extremely recent colonization. It ran southeast for 8 meters, beginning at the lower extent of the mudflat and ending at the riprap backshore. Substrate along this transect was silt-loam with no root zone visible in two of three cores. The third core had a very shallow root zone only measuring 4.5 cm. Pore water salinity was only estimated from one of the three cores and was 1 + 1 %.  The mudflat featured sparse incidences of just 7 species, mainly *Persicaria spp.* and *C. stagnalis*. No high marsh zone was observed along this transect
 
-```{r}
+```{r fig10, fig.cap = "Queensborough Bridge transect 1 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "queensborough_bridge_t1") %>%
     make_profile()
 ```
 
-```{r}
+```{r fig 11, fig.cap = "Queensborough Bridge transect 2 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "queensborough_bridge_t2") %>%
     make_profile()
@@ -216,13 +218,13 @@ Two transects were assessed in the eastern section of this marsh during low tide
 
 The second transect was located further east and ran for approximately 40 meters from silty mudflat into the high marsh zone. Substrate along this transect started out with sandier texture, but transitioned into loam/silt-loam after the sixteen meter mark. Rooting zones were still shallow along the lower half of the transect (i.e., 0 - 5 cm) but were deeper throughout the latter half (i.e., 20 - 21 cm). Pore water salinity range did not differ from the first transect. The lower reach of transect two had instances of *C. stagnalis*, *E. palustris* and *Bidens cernua*. The upper reach of this transect was dominated by *C. lyngbyei* with subdominant species including *L. salicaria* and *A. stolonifera*. Average *C. lyngbyei* height along this transect generally increased with a range of 59.2 cm to 126.2 cm.
 
-```{r}
+```{r fig12, fig.cap = "Mitchell Island West transect 1 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles." }
 transects %>%
     filter(site == "mitchell_is_west_t1") %>%
     make_profile()
 ```
 
-```{r}
+```{r fig13, fig.cap = "Mitchell Island West transect 2 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "mitchell_is_west_t2") %>%
     make_profile()
@@ -234,7 +236,7 @@ The second site on Mitchell island is located on the south eastern end of the is
 
 One transect was assessed at this site on August 3rd, 2023. The transect ran north from the low elevation mudflat into the high marsh zone for approximately 20 meters. Due to quick rising tide, only four soil cores were able to be assessed at this site. Texture of the sampled cores varied including sandy loam, silt-loam, and silty-clay-loam. Rooting depth also varied along the transect from a minimum of 0 cm to a maximum of 21 cm. Vegetation in the low marsh included instances of *Callitriche stagnalis* and *Persicaria spp.*. The higher marsh zone was primarily dominated by *Carex lyngbyei* with subdominant species including *T. angustifolia* and *A. stolonifera*. Average *C. lyngbyei* generally increased along the transect with mean heights ranging from 74 to 136 cm. 
 
-```{r}
+```{r fig14, fig.cap = "Mitchell Island East elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "mitchell_is_east") %>%
     make_profile()
@@ -246,7 +248,7 @@ Richmond North is located in the north arm of the Fraser River along Richmond’
 
 Sampling at this site took place from roughly 1:00 - 2:30 PM on Friday, August 4th 2023. One 24 meter transect ran south from the low marsh zone to the edge of the riparian vegetation at the bottom of the rip rap dike. Four soil cores were taken at six meter intervals along the length of the transect. The first three cores (0m, 6m, 12m) had a clay loam texture with no obvious root zone, whereas the upper most core (18m) had a silty clay texture with a 20 cm root zone. Pore water salinity was estimated at three out of the four core sampling stations and was between 0 and 1 + 1 %. The low marsh portion of the transect contained *Sagittaria latifolia* and *Zannichellia palustris*, whereas the upper marsh portion was dominated by *Juncus balticus* and *Carex lyngbyei*. Average sedge height of *C. lyngbyei* increased with elevation along the transect from 61.6 cm at 12 m to 100.6 cm at 22 m. 
 
-```{r}
+```{r fig15, fig.cap = "Richmond North elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "richmond_north") %>%
     make_profile()
@@ -258,7 +260,7 @@ This site is located in the north arm of the Fraser River along the Richmond sho
 
 Sampling at this site was conducted from approximately 3:00 - 5:00 PM on Friday, August 4th, 2023. One 40 meter transect ran south from the low marsh zone to the edge of the riparian vegetation. The substrate at this site was evaluated through seven soil cores. Substrate was consistently silty-clay texture with various rooting depths and horizons. The transect began in mudflat with instances of *C. stagnalis*, *Persicaria spp.*, and *Limosella aquatica* amongst other species. At approximately eight meters, the marsh transitioned into more of a sedge bench with *C. lyngbyei* as a subdominant species with instances of several other species including *L. salicaria* and *A. stolonifera*. Average *C. lyngbyei* height in this section ranged between 56.8 and 91.4 cm. Midway through the transect, the substrate became muddy with slight ponding. This section had a notable presence of Typha angustafolia. The last reach of the transect returned to mudflat conditions containing similar species to the lower reach, until reaching the riparian edge.
 
-```{r}
+```{r fig16, fig.cap = "Richmond No. 7 Rd elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "no_seven_rd") %>%
     make_profile()
@@ -270,13 +272,13 @@ The Canoe Pass site was located in the south arm of the Fraser River approximate
 
 This site was accessed by boat from Wellington Point Park, Ladner. Surveyors sampled two transects at Canoe Pass from approximately 6:45 to 12:30 on August 25th, 2023. The first transect was located on the eastern end of the island and ran southwest for approximately 150 meters from low elevation mudflat into upper elevation high marsh. The majority of this transect was dominated by Schoenoplectus pungens and E. Palustra with C. lyngbyei becoming dominant in places in the upper reach. Average sedge height of C. lyngbyei ranged from 5.8 cm in the lower reach to 120.8 cm in the upper reach. The substrate along this transect varied in texture and had root depths ranging from 0 to 20 cm. Pore water salinity was not able to be assessed along this transect due to lack of pore water in the soil pits. The second transect was located to the west of the first and ran southeast for approximately 32 meters from the north edge of the marsh. This transect ran up a steep bank on the north side of the island and into the high marsh zone. Dominant plant species along this transect included *Schoenoplectus pungens*, *E. palustris*, and *C. lyngbyei*. Average height of *C. lyngbyei* along this transect ranged from 69.2 to 124 cm. Substrate along this transect was primarily silt clay loam in texture with rooting depths varying from 4 to 22 cm deep. Pore water salinity was only able to be assessed at one location on this transect and ranged from 2 to 3 + 1%. Salinity of the channel adjacent to the transect was assessed at 4 + 1%.
 
-```{r}
+```{r fig17, fig.cap = "Canoe Pass transect 1 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "canoe_pass_t1") %>%
     make_profile()
 ```
 
-```{r}
+```{r fig18, fig.cap = "Canoe Pass transect 2 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "canoe_pass_t2") %>%
     make_profile()
@@ -288,12 +290,13 @@ Sapperton Bar is located in the mainstem of the Fraser River approximately five 
 
 Surveyors sampled at this site from approximately 11:00 - 16:00 on August 28th, 2023. The site was accessed by boat from the Vancouver Wooden Boat Society dock in New Westminster. Log booms were observed around the entire perimeter of the island and several old barges and pilings were observed along the western end of the site. Two transects were sampled at this site. The first transect ran northwest for approximately 74 meters from low lying mudflat into a patch of high marsh vegetation. The second transect was located approximately 1.2 kilometers upstream of transect one and ran northwest for approximately 60 meters. The lower reach of transect 1 was dominated by an assemblage of mudflat species including *Persicaria spp.* and *V. anagallis-aquatica*. The vegetation community transitioned to a *L. salicaria*-dominant high marsh. Substrate along the lower reach of this transect had sandy loam to sandy clay loam texture with no obvious rooting zone. These core samples were shorter in length due to a suspected sand layer that was not able to be penetrated with the coring device. Substrate along the upper reach of the transect shifted to a silt clay loam texture with increasing rooting zones ranging from 2.5 to 20 cm. Pore water salinity was only able to be estimated in the upper reach of the transect and was consistently 0 + 1%. The low marsh zone of transect two was similar to that of Transect 1, with slightly more *L. salicaria* at lower elevations. The upper reach of this transect similarly transitioned to a *L. salicaria*-dominant high marsh zone. Substrate along this transect ranged from sandy loam to loam in texture. The lower half of the transect had no obvious rooting zone while the upper reach had rooting depths ranging from 4 to 18 cm. Pore water salinity was not able to be estimated along this transect due to lack of pore water in the soil pits.
 
-```{r}
+```{r fig19, fig.cap = "Sapperton Bar transect 1 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "sapperton_bar_t1") %>%
     make_profile()
 ```
-```{r}
+
+```{r fig20, fig.cap = "Sapperton Bar transect 2 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "sapperton_bar_t2") %>%
     make_profile()
@@ -305,13 +308,13 @@ South Arm Marshes West comprised two small islands within the South Arm Marshes 
 
 <!-- lacking soil info! -->
 
-```{r}
+```{r fig21, fig.cap = "South Arm Marshes West transect 1 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "south_arm_marshes_west_t1") %>%
     make_profile()
 ```
 
-```{r}
+```{r fig 22, fig.cap = "South Arm Marshes West transect 2 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "south_arm_marshes_west_t2") %>%
     make_profile()
@@ -319,9 +322,13 @@ transects %>%
 
 ## Frenchie's Island
 
+Frenchies Island is location in the centre of the South Arm Marshes Wildlife Management Area. This sheltered marsh island is managed in partnership with Ducks Unlimited Canada and includes a restored former private farm whose dyke has since been breached. Natural tidal marshes extend for several hundred meters beyond the breached dyke and these were the locatiosn selected for sampling. Transect 1 was located northeast of the Frenchies dyked area and Transect 2 to the south.
 
+Transect 1 targeted an area of recent marsh expansion on the north east side of Frenchies Island. This transect bisected a large, vigorous stand of *S. tabernaemontani* before transitioning to a *C. lyngbyei*-dominant high marsh zone. Soil texture ranged from silt-loam to silt-clay-loam for all soil cores on this tranect. Salinity ranged from 2% - 5% (+/- 1%). Mottling was common and observed in most soil horizons.
 
-```{r}
+Tranect 2 targeted an area of apparent marsh stability. The sparsely vegetated low marsh gave way quickly to dense *C. lyngbyei*-dominant high marsh. The upland portion of the transect bisected a large, dense stand of near *T. spp.* monoculture. The transect also encountered two tidal channels, visible in figure 24. Soil texture was consistent with transect 1, though pore water salinity was not available in most locations for this transect. Salinity was only available at the first station, measuring 3% (+/- 1%).
+
+```{r fig23, fig.cap = "Frenchies Island Transect 1 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "frenchies_island_t1") %>%
     make_profile() +
@@ -329,7 +336,8 @@ transects %>%
                        limits = c(-1.3, 7))
 ```
 
-```{r}
+
+```{r fig24, fig.cap = "Frenchies Island Transect 2 elevation profile with associated vegetation communities. Soil profile locations indicated with black triangles."}
 transects %>%
     filter(site == "frenchies_island_t2") %>%
     make_profile() +
@@ -366,12 +374,18 @@ flora_table
 
 # Soil survey results
 
-The complete results from soil core samples taken along each transect are summarized below.
+The complete results from soil core samples taken along each transect are summarized below. Columns H1 - H4 represent depth and soil texture for soil horizon 1 through 4 respectively. Salinity is presented in percent.
 
 ```{r}
 
-#soil_raw <- readRDS("./data/soil_surveys.RDS")
+soil <- readRDS("./data/soil_cores.RDS")
 
-#soil <- soil_raw
+soil_table <- gt(soil) %>%
+    tab_options(
+        table.font.size = 11,
+        column_labels.font.size = 14
+    )
+
+soil_table
 
 ```
