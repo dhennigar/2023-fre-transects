@@ -37,3 +37,13 @@ flora <- flora_raw %>%
     select(c(site_name, species, low_marsh_only))
 
 saveRDS(flora, "./data/floristic_surveys.RDS")
+
+
+## Soil data import and cleaning
+
+soil_raw <- read.csv("./data/soil_cores/soil_cores.csv")
+
+soil <- soil_raw # clean up goes here
+
+saveRDS(soil, "./data/soil_cores.RDS")
+
